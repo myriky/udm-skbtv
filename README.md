@@ -7,8 +7,8 @@ UDM(Unifi Dream Machine Pro)에 SKB IPTV를 직렬하기 위한 튜토리얼입�
 2. [SKB를 위한 별도의 VLAN 네트워크 추가](#SKB를-위한-별도의-VLAN-네트워크-추가)
 3. [UDM 포트 맵핑하기](#UDM-포트-맵핑하기)
 4. [방화벽 설정 추가하기](#방화벽-설정-추가하기)
-5. [igmpproxy-설치-및-설정](#igmpproxy-설치-및-설정)
-6. [igmproxy-자동실행-시키기](#igmproxy-자동실행-시키기)
+5. [igmpproxy 설치 및 설정](#igmpproxy-설치-및-설정)
+6. [igmproxy 자동실행 시키기](#igmproxy-자동실행-시키기)
 7. [Credits](#credits)
 
 ### 들어가기
