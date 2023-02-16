@@ -63,6 +63,9 @@ IPTV가 연결된 포트에 위에서 생성한 네트워크를 이용하도록 
 2. IPTV가 연결된 다운링크 포트를 선택합니다. (저는 8번에 다운링크가 있고, 10번 SFP 포트에 업링크가 연결돼 있습니다.)
     * Port Profile : BTV
     * Apply Changes 눌러 저장하기
+    
+![PORT Manager](https://github.com/myriky/udm-skbtv/blob/78d4a554e47ff1b315ed5baf512a6c1b590d96c4/images/port.png)
+
 
 ### 방화벽 설정 추가하기
 
