@@ -77,55 +77,55 @@ SKB 모뎀에서 들어오는 IPTV 관련된 트래픽을 앞서 설정한 BTV �
     
 1. UDM 네트워크 Settings -> Firewall & Security 페이지로 이동합니다.
 2. Firewall Rules 섹션에서 Create New Rule 버튼을 누릅니다.
-  * Type : Internet In
-  * Description : Allow IPTV Multicast
-  * Rule Applied : Before Predefined Rules
-  * Action : Accept
-  * IPv4 Protocol : TCP and UDP
-  * Source
-    * Source Type : Port/IP Group
-    * IPv4 Address Group
-    * Port Group : Any
-      * Create New Port/IP Group 를 눌러 새로운 IP Group을 생성합니다
-        * Profile Name : BTV
-        * IPv4 Address/Subnet : **192.168.0.0/16**
-        * Create New Port/IP Group 을 눌러 입력내용을 저장합니다.
-      * 방금 추가한 IGMP 를 선택합니다.
-    * IPv4 Address Group : BTV
-  * Destination
-    * Source Type : Port/IP Group
-    * IPv4 Address Group
-      * Create New Port/IP Group 를 눌러 새로운 IP Group을 생성합니다
-        * Profile Name : IGMP
-        * IPv4 Address/Subnet : **224.0.0.0/4**
-        * Create New Port/IP Group 을 눌러 입력내용을 저장합니다.
-      * 방금 추가한 IGMP 를 선택합니다.
-    * IPv4 Address Group : IGMP
-    * Port Group : Any
-  * Advanced : Auto
+	  * Type : Internet In
+	  * Description : Allow IPTV Multicast
+	  * Rule Applied : Before Predefined Rules
+	  * Action : Accept
+	  * IPv4 Protocol : TCP and UDP
+	  * Source
+	    * Source Type : Port/IP Group
+	    * IPv4 Address Group
+	    * Port Group : Any
+	      * Create New Port/IP Group 를 눌러 새로운 IP Group을 생성합니다
+		* Profile Name : BTV
+		* IPv4 Address/Subnet : **192.168.0.0/16**
+		* Create New Port/IP Group 을 눌러 입력내용을 저장합니다.
+	      * 방금 추가한 IGMP 를 선택합니다.
+	    * IPv4 Address Group : BTV
+	  * Destination
+	    * Source Type : Port/IP Group
+	    * IPv4 Address Group
+	      * Create New Port/IP Group 를 눌러 새로운 IP Group을 생성합니다
+		* Profile Name : IGMP
+		* IPv4 Address/Subnet : **224.0.0.0/4**
+		* Create New Port/IP Group 을 눌러 입력내용을 저장합니다.
+	      * 방금 추가한 IGMP 를 선택합니다.
+	    * IPv4 Address Group : IGMP
+	    * Port Group : Any
+	  * Advanced : Auto
 3. Apply Changes 눌러 입력한 방화벽 설정 추가
 4. 같은 방식으로 방화벽 규칙 추가
-  * Type : Internet Local
-  * Description : Allow IGMP Traffic
-  * Rule Applied : Before Predefined Rules
-  * Action : Accept
-  * IPv4 Protocol : **IGMP**
-  * Match all protocols except for this : 체크안함
-  * Source
-    * Source Type : Port/IP Group
-    * IPv4 Address Group : Any
-    * Port Group : Any
-  * Destination
-    * Source Type : Port/IP Group
-    * IPv4 Address Group : Any
-    * Port Group : Any
-  * Advanced
-    * Manual로 설정
-    * States
-      * Match State New 활성화
-      * Match State Established 활성화
-      * Match State Invalid 활성화
-      * Match State Related 활성화  
+	  * Type : Internet Local
+	  * Description : Allow IGMP Traffic
+	  * Rule Applied : Before Predefined Rules
+	  * Action : Accept
+	  * IPv4 Protocol : **IGMP**
+	  * Match all protocols except for this : 체크안함
+	  * Source
+	    * Source Type : Port/IP Group
+	    * IPv4 Address Group : Any
+	    * Port Group : Any
+	  * Destination
+	    * Source Type : Port/IP Group
+	    * IPv4 Address Group : Any
+	    * Port Group : Any
+	  * Advanced
+	    * Manual로 설정
+	    * States
+	      * Match State New 활성화
+	      * Match State Established 활성화
+	      * Match State Invalid 활성화
+	      * Match State Related 활성화  
 5. Apply Changes 눌러 입력한 방화벽 설정 추가
 
 
