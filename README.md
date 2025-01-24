@@ -1,3 +1,7 @@
+최근 Unifi OS에서는 IPTV Streaming 기능이 기본탑재 됐기 때문에 이 기능을 사용하시면 아래 과정을 생략하실 수 있습니다.
+
+Setting -> Internet -> IPTV Streaming
+
 # udm-skbtv
 UDM(Unifi Dream Machine Pro)에 SKB IPTV를 직렬하기 위한 튜토리얼입니다.
 
